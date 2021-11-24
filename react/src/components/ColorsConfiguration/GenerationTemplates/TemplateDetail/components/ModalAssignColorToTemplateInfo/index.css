@@ -1,0 +1,60 @@
+.imageCard {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 0 20px 0 0;
+  display: block;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.imageCard img {
+  height: 100%;
+}
+.cardColorItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 45px;
+  padding: 0px 11px 0 11px;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.cardColorItem:hover {
+  background-color: #dfe1e5;
+}
+
+.colorListContainer {
+  max-height: 300px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  border: 1px solid #dfe1e5;
+  background: #fff;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.searchContainer {
+  position: relative;
+}
+
+.assignContainer {
+  position: relative;
+  min-height: 500px;
+  padding-top: 40px;
+}
+
+.stepIcon {
+}
+
+.containerInputs {
+  margin-bottom: 1rem;
+}
+
+.containerInputs input {
+  color: #000;
+}

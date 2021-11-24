@@ -1,0 +1,6 @@
+mutation updateColorById($color: ColorSearchInput!, $colorsAcronym: String!) {
+  updateColorById(color: $color, colorsAcronym: $colorsAcronym) {
+    message
+    status
+  }
+}

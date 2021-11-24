@@ -1,0 +1,16 @@
+mutation approveColor(
+  $colorToApproval: ColorApprovalSearchInput!
+  $colorToAssign: ColorSearchInput!
+  $colorsAcronym: String!
+  $colorsApprovalAcronym: String!
+) {
+  approveColor(
+    colorToApproval: $colorToApproval
+    colorToAssign: $colorToAssign
+    colorsAcronym: $colorsAcronym
+    colorsApprovalAcronym: $colorsApprovalAcronym
+  ) {
+    status
+    message
+  }
+}

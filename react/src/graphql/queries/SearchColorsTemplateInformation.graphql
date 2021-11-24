@@ -1,0 +1,17 @@
+query searchTemplatesInformation($filter: String) {
+  searchTemplatesInformation(filter: $filter) {
+    data {
+      templates {
+        creationDate
+        colorName
+        idTemplate
+        isLight
+        sellers
+        type
+        value
+        variations
+        id
+      }
+    }
+  }
+}

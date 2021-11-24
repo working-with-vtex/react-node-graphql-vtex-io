@@ -1,0 +1,25 @@
+.panelCategories {
+  width: 50%;
+  box-shadow: rgba(61, 62, 64, 0.2) 0px 3px 9px 0px;
+}
+
+.panelCategoriesList {
+  padding: 0 10px;
+  margin-right: 10px;
+}
+
+.departmentItem {
+  padding: 10px;
+  color: rgb(88, 89, 89);
+  background: rgb(250, 250, 250);
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.departmentItem:hover {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.departmentItemActive {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}

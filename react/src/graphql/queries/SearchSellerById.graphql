@@ -1,0 +1,12 @@
+query searchSellerById($id: String) {
+  searchSellerById(id: $id) {
+    data {
+      seller {
+        sellerId
+        sellerName
+        id
+        specificationName
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.cellNameContainer {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.deleteDuplicateContainer {
+  position: relative;
+}
+
+.deleteDuplicateItems {
+  position: absolute;
+  left: -20px;
+  top: -20px;
+}

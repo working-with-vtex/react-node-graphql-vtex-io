@@ -1,0 +1,6 @@
+mutation deleteApprovalColor($id: String!, $colorsAcronym: String!) {
+  deleteApprovalColor(id: $id, colorsAcronym: $colorsAcronym) {
+    status
+    message
+  }
+}

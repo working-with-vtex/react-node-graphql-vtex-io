@@ -1,0 +1,6 @@
+mutation createColor($color: ColorCreationInput!, $colorsAcronym: String!) {
+  createColor(color: $color, colorsAcronym: $colorsAcronym) {
+    status
+    message
+  }
+}

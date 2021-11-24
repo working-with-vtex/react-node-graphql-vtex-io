@@ -1,0 +1,14 @@
+mutation runJobSearchSpecifications(
+  $template: ColorsTemplateJobInput!
+  $acronym: String!
+  $acronymInformation: String!
+) {
+  runJobSearchSpecifications(
+    template: $template
+    acronym: $acronym
+    acronymInformation: $acronymInformation
+  ) {
+    status
+    message
+  }
+}

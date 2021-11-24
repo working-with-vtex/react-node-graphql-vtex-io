@@ -1,0 +1,23 @@
+query searchTemplateById($id: String) {
+  searchTemplateById(id: $id) {
+    data {
+      template {
+        creationDate
+        nameTemplate
+        productsId
+        productsWithErrors
+        sellerFieldName
+        productsCreatedAutomatic
+        productsCreatedAutomaticId
+        status
+        sellerName
+        statusParam
+        to
+        from
+        total
+        user
+        id
+      }
+    }
+  }
+}

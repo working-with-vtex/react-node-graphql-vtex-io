@@ -1,0 +1,17 @@
+mutation createBrands($data: [Brands!]!){
+  createBrands(brands:$data){
+    status
+    message
+    data {
+      brands{
+        name
+        keywords
+        text
+        siteTitle
+        menuHome
+        active
+        isCreated
+      }
+    }
+  }
+}

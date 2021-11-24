@@ -1,0 +1,7 @@
+mutation deleteColorsTemplateInformation($id: String!, $acronym: String!) {
+  deleteColorsTemplateInformation(id: $id, acronym: $acronym) {
+    id
+    status
+    message
+  }
+}

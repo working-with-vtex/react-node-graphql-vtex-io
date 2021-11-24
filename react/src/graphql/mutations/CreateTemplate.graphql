@@ -1,0 +1,10 @@
+mutation createColorsTemplate($template: ColorsTemplateCreationInput!, $acronym: String!) {
+  createColorsTemplate(template: $template, acronym: $acronym) {
+    message
+    data {
+      template {
+        Id
+      }
+    }
+  }
+}

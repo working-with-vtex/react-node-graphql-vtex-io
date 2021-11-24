@@ -1,0 +1,7 @@
+type Query {
+  getState: QueryGetStateResponse
+}
+
+type Mutation {
+  getState: MutationGetStateResponse
+}

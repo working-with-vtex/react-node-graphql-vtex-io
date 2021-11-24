@@ -1,0 +1,9 @@
+mutation updateColoApprovalById($color: ColorApprovalSearchInput!, $colorsAcronym: String!) {
+  updateApprovalColorById(color: $color, colorsAcronym: $colorsAcronym) {
+    data {
+      color {
+        name
+      }
+    }
+  }
+}

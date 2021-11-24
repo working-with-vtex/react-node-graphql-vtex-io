@@ -1,0 +1,12 @@
+query searchSellers($filter: String) {
+  searchSellers(filter: $filter) {
+    data {
+      sellers {
+        sellerId
+        sellerName
+        id
+        specificationName
+      }
+    }
+  }
+}

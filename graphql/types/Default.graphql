@@ -1,0 +1,9 @@
+# Types
+
+type MutationGetStateResponse {
+  state: Boolean
+}
+
+type QueryGetStateResponse {
+  state: Boolean
+}

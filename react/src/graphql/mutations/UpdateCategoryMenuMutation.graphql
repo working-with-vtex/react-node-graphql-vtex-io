@@ -1,0 +1,22 @@
+mutation UpdateCategories($data: [CategoryMenu!]!) {
+  updateCategoryMenu(categories: $data) {
+    status
+    message
+    data {
+      categories {
+        id
+        name
+        href
+        slug
+        icon
+        parent
+        styles
+        showIconLeft
+        showIconRight
+        categoryId
+        enable
+      }
+    }
+    fileName
+  }
+}

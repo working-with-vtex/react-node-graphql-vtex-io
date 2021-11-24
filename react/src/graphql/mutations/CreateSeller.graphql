@@ -1,0 +1,12 @@
+mutation createSeller($seller: ColorSellerCreationInput!, $colorSellerAcronym: String!) {
+  createSeller(seller: $seller, colorSellerAcronym: $colorSellerAcronym) {
+    status
+    message
+    data {
+      seller {
+        Id
+        DocumentId
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+mutation updateColorsTemplateInformation(
+  $template: ColorsTemplateInformationUpdateInput!
+  $acronym: String!
+) {
+  updateColorsTemplateInformation(template: $template, acronym: $acronym) {
+    status
+    message
+  }
+}

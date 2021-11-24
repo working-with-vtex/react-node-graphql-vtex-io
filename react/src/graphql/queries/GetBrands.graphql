@@ -1,0 +1,11 @@
+query {
+  brands {
+    id
+    slug
+    name
+    titleTag
+    active
+    metaTagDescription
+    imageUrl
+  }
+}

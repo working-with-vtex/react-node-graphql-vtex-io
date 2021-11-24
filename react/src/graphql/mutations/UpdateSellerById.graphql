@@ -1,0 +1,11 @@
+mutation updateSellerById($seller: ColorSellerSearchInput!, $colorSellerAcronym: String!) {
+  updateSellerById(seller: $seller, colorSellerAcronym: $colorSellerAcronym) {
+    message
+    status
+    data {
+      seller {
+        sellerName
+      }
+    }
+  }
+}

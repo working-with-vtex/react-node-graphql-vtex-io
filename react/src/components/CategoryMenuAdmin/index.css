@@ -1,0 +1,19 @@
+.manageDependency {
+    margin: 2%;
+    text-align: center;
+}
+.dropArea {
+    margin: 10px;
+}
+.progressCircle {
+    margin-left: 48%;
+}
+.tokenInput {
+    width: 100%;
+    height: fit-content;
+    margin: 10px !important;
+}
+.downloadFile {
+    float: right;
+    margin-right: 10px !important;
+}

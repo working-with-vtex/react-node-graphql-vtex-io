@@ -1,0 +1,34 @@
+{
+  "name": "configuration-administration",
+  "version": "0.1.0",
+  "scripts": {
+    "pretest": "yarn",
+    "test": "vtex-test-tools test",
+    "test:coverage": "vtex-test-tools test --collectCoverage",
+    "get-types": "rm -rf puntoscolombia.configuration-administration && tsc -p tsconfig-types.json --outDir puntoscolombia.configuration-administration"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ramda": "^0.26.1",
+    "apollo-client": "^2.6.8",
+    "react": "^16.13.1",
+    "react-apollo": "^3.1.5",
+    "react-dom": "^16.13.1",
+    "react-intl": "4.5.0",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@vtex/test-tools": "^3.1.0",
+    "@types/node": "^14.0.14",
+    "@types/react": "^16.8.10",
+    "@vtex/tsconfig": "^0.4.4",
+    "eslint": "^7.19.0",
+    "eslint-config-vtex-react": "^5.0.1",
+    "typescript": "3.9.7",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.111.1/public/@types/vtex.render-runtime",
+    "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.134.0/public/@types/vtex.styleguide",
+    "@types/lodash": "^4.14.152",
+    "@types/react-intl": "^3.0.0"
+  }
+}

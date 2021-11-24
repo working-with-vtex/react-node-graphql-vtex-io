@@ -1,0 +1,6 @@
+{
+  "admin.app.example-app": {
+    "component": "ExampleAdmin",
+    "path": "/admin/app/pasarela-puntoscolombia/example-app"
+  }
+}

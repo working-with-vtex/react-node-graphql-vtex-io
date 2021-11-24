@@ -1,0 +1,87 @@
+{
+  "name": "configuration-administration",
+  "vendor": "puntoscolombia",
+  "version": "0.3.1",
+  "vtex-version": "0.0.0",
+  "builders": {
+    "styles": "2.x",
+    "node": "6.x",
+    "graphql": "1.x",
+    "react": "3.x",
+    "messages": "1.x",
+    "admin": "0.x"
+  },
+  "title": "Manage Configurations",
+  "description": "App for manage the diferents configurations of PCO",
+  "defaultLocale": "es",
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.store-icons": "0.x",
+    "vtex.store-resources": "0.x"
+  },
+  "billingOptions": {
+    "free": true,
+    "termsURL": "https://url.to.the/terms"
+  },
+  "credentialType": "absolute",
+  "settingsSchema": {
+    "title": "Configurations",
+    "type": "object",
+    "properties": {
+      "manageMenu": {
+        "title": "set the configurations for the menu",
+        "description": "",
+        "type": "object",
+        "properties": {
+          "bucket": {
+            "title": "name of the bucket from s3",
+            "description": "",
+            "type": "string",
+            "default": "vtex-mkp-resources"
+          },
+          "awsLambdaUrl": {
+            "title": "url for use in the process for update the menu",
+            "description": "",
+            "type": "string",
+            "default": "http://sw3qgt22r9.execute-api.us-east-1.amazonaws.com"
+          },
+          "awsUpdateCategoryEndpoint": {
+            "title": "path for call when need for update the category menu",
+            "description": "",
+            "type": "string",
+            "default": "/prod/api/updateJsonContent"
+          },
+          "awsGetCategoryEndpoint": {
+            "title": "path for call when need for update the category menu",
+            "description": "",
+            "type": "string",
+            "default": "/prod/api/getCategoryMenu"
+          },
+          "awsS3Endpoint": {
+            "title": "path for call when need for get the category menu",
+            "description": "",
+            "type": "string",
+            "default": "http://vtex-mkp-resources.s3.amazonaws.com/content/menu"
+          },
+          "s3FilePath": {
+            "title": "path for use when update the category menu",
+            "description": "",
+            "type": "string",
+            "default": "content/menu/"
+          },
+          "jsonName": {
+            "title": "end name of the json file from the s3",
+            "description": "",
+            "type": "string",
+            "default": "-category-menu.json"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

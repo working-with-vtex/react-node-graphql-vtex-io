@@ -1,0 +1,7 @@
+mutation deleteSeller($id: String!, $colorSellerAcronym: String!) {
+  deleteSeller(id: $id, colorSellerAcronym: $colorSellerAcronym) {
+    id
+    status
+    message
+  }
+}

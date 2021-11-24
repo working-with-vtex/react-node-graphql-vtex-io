@@ -1,0 +1,23 @@
+{
+  "extends": "@vtex/tsconfig",
+  "awesomeTypescriptLoaderOptions": {
+    "useWebpackText": true,
+    "useTranspileModule": true,
+    "doTypeCheck": true,
+    "forkChecker": true
+  },
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "react",
+    "lib": ["dom", "es7"],
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "noEmitOnError": false,
+    "types": ["node", "jest", "graphql"]
+  },
+  "lib": ["dom", "es7"],
+  "include": ["./typings/*.d.ts", "./**/*.tsx", "./**/*.ts"]
+}

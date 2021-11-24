@@ -1,0 +1,16 @@
+mutation validateDisponibility($data: [Brands!]!) {
+  validateDisponibility(brands: $data) {
+    numberOfDuplicates
+    data {
+      brands {
+        name
+        keywords
+        text
+        siteTitle
+        menuHome
+        active
+        isDuplicate
+      }
+    }
+  }
+}

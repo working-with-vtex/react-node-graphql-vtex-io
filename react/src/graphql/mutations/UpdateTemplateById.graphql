@@ -1,0 +1,11 @@
+mutation updateColorsTemplateById($template: ColorsTemplateSearchInput!, $acronym: String!) {
+  updateColorsTemplateById(template: $template, acronym: $acronym) {
+    message
+    status
+    data {
+      template {
+        nameTemplate
+      }
+    }
+  }
+}

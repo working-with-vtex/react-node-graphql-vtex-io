@@ -1,0 +1,16 @@
+query searchColorById($id: String) {
+  searchColorById(id: $id) {
+    data {
+      color {
+        colorName
+        creationDate
+        value
+        type
+        variations
+        sellers
+        id
+        isLight
+      }
+    }
+  }
+}

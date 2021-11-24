@@ -1,0 +1,13 @@
+{
+  "section": "storeSetup",
+  "titleId": "admin/navigation.pasarela-puntoscolombia.title",
+  "subSection": "promotion",
+  "searchKeyWordsHelpers": "admin/navigation.pasarela-puntoscolombia.kws",
+  "subSectionItems": [
+    {
+      "labelId": "admin/navigation.example-app",
+      "path": "/admin/pasarela-puntoscolombia/example-app",
+      "searchKeyWordsHelpers": "admin/navigation.example-app.kws"
+    }
+  ]
+}

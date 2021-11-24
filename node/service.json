@@ -1,0 +1,15 @@
+{
+  "stack": "nodejs",
+  "memory": 1024,
+  "ttl": 300,
+  "timeout": 60,
+  "minReplicas": 1,
+  "maxReplicas": 10,
+  "runTimeArgs": ["--max_old_space_size=800"],
+  "routes": {
+    "getState": {
+      "path": "/_v1/pasarela-puntoscolombia/getState",
+      "public": true
+    }
+  }
+}

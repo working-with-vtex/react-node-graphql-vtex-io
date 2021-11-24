@@ -1,0 +1,23 @@
+query searchTemplates($filter: String) {
+  searchTemplates(filter: $filter) {
+    data {
+      templates {
+        creationDate
+        nameTemplate
+        productsId
+        productsWithErrors
+        sellerFieldName
+        productsCreatedAutomatic
+        productsCreatedAutomaticId
+        sellerName
+        statusParam
+        to
+        status
+        from
+        total
+        user
+        id
+      }
+    }
+  }
+}

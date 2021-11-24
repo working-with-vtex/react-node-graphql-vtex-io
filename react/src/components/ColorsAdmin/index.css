@@ -1,0 +1,13 @@
+.tabElement {
+  position: relative;
+}
+
+.tabText {
+  padding-right: 40px;
+  margin: 0;
+}
+.tabBadge {
+  position: absolute;
+  top: -5px;
+  right: 0;
+}

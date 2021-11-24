@@ -1,0 +1,45 @@
+:root {
+  --borderWidth: 7px;
+  --height: 36px;
+  --width: 23px;
+  --borderColor: #000;
+  --borderColorLight: #fff;
+}
+
+.imageCardPresentation {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.imageCardPresentation:hover {
+  opacity: 0.6;
+}
+
+.imageCardPresentation img {
+  height: 100%;
+}
+
+.checkIcon {
+  display: inline-block;
+  transform: rotate(45deg);
+  height: var(--height);
+  width: var(--width);
+  border-bottom: var(--borderWidth) solid var(--borderColor);
+  border-right: var(--borderWidth) solid var(--borderColor);
+  position: absolute;
+  left: calc(39%);
+  top: calc(27%);
+}
+
+.checkIcon.isLight {
+  border-bottom: var(--borderWidth) solid var(--borderColorLight);
+  border-right: var(--borderWidth) solid var(--borderColorLight);
+}

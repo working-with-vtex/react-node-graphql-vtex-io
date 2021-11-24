@@ -1,0 +1,15 @@
+query searchApprovalColors($filter: String) {
+  searchApprovalColors(filter: $filter) {
+    data {
+      colors {
+        name
+        creationDate
+        state
+        specificationName
+        specificationValue
+        id
+        sellerId
+      }
+    }
+  }
+}
